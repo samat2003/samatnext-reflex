@@ -1,0 +1,4 @@
+seed,preset,difficulty,accuracy,macro_f1,failsafe_recall,safety_critical_miss_rate,max_predicted_class_share,batch1_p95_ms,eval_json
+1,s,temporal_hard,0.9054999947547913,0.9054020730854933,0.9498997995991983,0.07776669990029911,0.253,,/home/samat_zharassov/samatnext-ultra/results/reflexformer_s_temporal_hard_seed_1_eval.json
+2,s,temporal_hard,0.8939999938011169,0.894182516164316,0.912,0.0775347912524851,0.27,,/home/samat_zharassov/samatnext-ultra/results/reflexformer_s_temporal_hard_seed_2_eval.json
+3,s,temporal_hard,0.8955000042915344,0.895538114346528,0.9356136820925554,0.07530120481927711,0.2595,,/home/samat_zharassov/samatnext-ultra/results/reflexformer_s_temporal_hard_seed_3_eval.json
