@@ -1,0 +1,28 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+*.egg-info/
+dist/
+build/
+
+# Generated experiment artifacts
+data/
+checkpoints/
+models/
+results/
+runs/
+wandb/
+
+# Model/checkpoint/export files
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.bin
