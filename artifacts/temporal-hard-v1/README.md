@@ -8,6 +8,7 @@ These artifacts are copied from the frozen metrics documented in `experiments/re
 
 - `reflexformer_s_v1_eval.json` — seed-42 ReflexFormer-S v1 evaluation summary.
 - `reflexformer_s_v1_benchmark.csv` — seed-42 ReflexFormer-S v1 fp16 benchmark summary on RTX 5070 Ti Laptop GPU.
+- `reflexformer_s_v1_benchmark.json` — same benchmark summary in JSON form.
 - `reflexformer_s_temporal_hard_3seed_sweep.csv` — lightweight 3-seed ReflexFormer-S mini sweep summary.
 - `reflexformer_s_temporal_hard_3seed_sweep.json` — same sweep in JSON form.
 
