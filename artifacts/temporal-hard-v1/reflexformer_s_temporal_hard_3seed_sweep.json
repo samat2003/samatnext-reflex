@@ -1,0 +1,71 @@
+{
+  "artifact_type": "seed_sweep_summary",
+  "experiment": "reflexformer_temporal_hard_v1",
+  "model": "ReflexFormer-S",
+  "preset": "s",
+  "difficulty": "temporal_hard",
+  "scope": "synthetic_simulation_only",
+  "sweep_config": {
+    "seeds": [1, 2, 3],
+    "train_examples": 12000,
+    "val_examples": 2000,
+    "test_examples": 2000,
+    "epochs": 12,
+    "benchmark_enabled": false
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "accuracy": 0.9054999947547913,
+      "macro_f1": 0.9054020730854933,
+      "failsafe_recall": 0.9498997995991983,
+      "safety_critical_miss_rate": 0.07776669990029911,
+      "max_predicted_class_share": 0.2530,
+      "batch1_p95_ms": null
+    },
+    {
+      "seed": 2,
+      "accuracy": 0.8939999938011169,
+      "macro_f1": 0.894182516164316,
+      "failsafe_recall": 0.9120,
+      "safety_critical_miss_rate": 0.0775347912524851,
+      "max_predicted_class_share": 0.2700,
+      "batch1_p95_ms": null
+    },
+    {
+      "seed": 3,
+      "accuracy": 0.8955000042915344,
+      "macro_f1": 0.895538114346528,
+      "failsafe_recall": 0.9356136820925554,
+      "safety_critical_miss_rate": 0.07530120481927711,
+      "max_predicted_class_share": 0.2595,
+      "batch1_p95_ms": null
+    }
+  ],
+  "mean": {
+    "accuracy": 0.8983,
+    "macro_f1": 0.8984,
+    "failsafe_recall": 0.9325,
+    "safety_critical_miss_rate": 0.0769,
+    "max_predicted_class_share": 0.2608,
+    "batch1_p95_ms": null
+  },
+  "std": {
+    "accuracy": 0.0063,
+    "macro_f1": 0.0061,
+    "failsafe_recall": 0.0191,
+    "safety_critical_miss_rate": 0.0014,
+    "max_predicted_class_share": 0.0086,
+    "batch1_p95_ms": null
+  },
+  "interpretation": "Lightweight 3-seed stability check showed low macro-F1 variance, no class collapse, FAILSAFE recall above 0.91 for each seed, and max predicted class share well below the collapse threshold. GRU and Transformer-S baselines were not swept across the same seeds.",
+  "limitations": [
+    "small 3-seed sweep only",
+    "no per-seed GRU sweep",
+    "no per-seed Transformer-S baseline sweep",
+    "no benchmark collected during mini sweep",
+    "synthetic telemetry only",
+    "simulation-only advisory classification",
+    "no real drone safety claim"
+  ]
+}
