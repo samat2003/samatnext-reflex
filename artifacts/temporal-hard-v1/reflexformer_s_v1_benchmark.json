@@ -1,0 +1,81 @@
+{
+  "artifact_type": "benchmark_summary",
+  "experiment": "reflexformer_temporal_hard_v1",
+  "model": "ReflexFormer-S",
+  "preset": "s",
+  "scope": "synthetic_simulation_only",
+  "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "dtype": "torch.float16",
+  "seq_len": 128,
+  "parameter_count": 3278340,
+  "compile": false,
+  "notes": [
+    "Batch-1 latency is single-example latency.",
+    "Batched throughput is not single-example latency.",
+    "Input tokens/sec means telemetry-token throughput, not LLM generation speed and not training speed.",
+    "Latency is hardware-, thermal-, and run-dependent."
+  ],
+  "rows": [
+    {
+      "batch": 1,
+      "latency_ms_mean": 1.0004624009132386,
+      "latency_ms_p50": 0.738431990146637,
+      "latency_ms_p90": 1.1756288290023804,
+      "latency_ms_p95": 1.4685840249061572,
+      "amortized_ms_per_example": 1.0004624009132386,
+      "examples_per_sec": 999.5378128025436,
+      "input_tokens_per_sec": 127940.84003872558,
+      "peak_cuda_mem_mb": 15.896484375
+    },
+    {
+      "batch": 4,
+      "latency_ms_mean": 0.7603875201940536,
+      "latency_ms_p50": 0.624864012002945,
+      "latency_ms_p90": 1.257414364814758,
+      "latency_ms_p95": 1.509027206897735,
+      "amortized_ms_per_example": 0.1900968800485134,
+      "examples_per_sec": 5260.475604569609,
+      "input_tokens_per_sec": 673340.8773849099,
+      "peak_cuda_mem_mb": 17.45068359375
+    },
+    {
+      "batch": 16,
+      "latency_ms_mean": 1.0736761593818664,
+      "latency_ms_p50": 1.0354559421539307,
+      "latency_ms_p90": 1.159324836730957,
+      "latency_ms_p95": 1.3212208449840546,
+      "amortized_ms_per_example": 0.06710475996136665,
+      "examples_per_sec": 14902.072529217256,
+      "input_tokens_per_sec": 1907465.2837398087,
+      "peak_cuda_mem_mb": 24.45654296875
+    },
+    {
+      "batch": 64,
+      "latency_ms_mean": 3.4459942495822906,
+      "latency_ms_p50": 3.5086240768432617,
+      "latency_ms_p90": 3.6833600521087644,
+      "latency_ms_p95": 3.7387360453605654,
+      "amortized_ms_per_example": 0.05384366014972329,
+      "examples_per_sec": 18572.288682071314,
+      "input_tokens_per_sec": 2377252.951305128,
+      "peak_cuda_mem_mb": 48.53466796875
+    },
+    {
+      "batch": 256,
+      "latency_ms_mean": 12.587460498809815,
+      "latency_ms_p50": 12.660575866699219,
+      "latency_ms_p90": 13.626400375366211,
+      "latency_ms_p95": 13.894356536865235,
+      "amortized_ms_per_example": 0.04916976757347584,
+      "examples_per_sec": 20337.70036650408,
+      "input_tokens_per_sec": 2603225.646912522,
+      "peak_cuda_mem_mb": 148.00341796875
+    }
+  ],
+  "limitations": [
+    "benchmark-specific to RTX 5070 Ti Laptop GPU",
+    "not an embedded hardware benchmark",
+    "not a live-flight benchmark",
+    "not evidence of real-world drone safety"
+  ]
+}
